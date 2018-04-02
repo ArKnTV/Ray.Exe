@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+uconst Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var prefix = ("!")
@@ -26,7 +26,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.reply("Bien le Bonjour ${User}, j'espère que vous avez pu reprendre votre souffle par cette courte brève de la Tempète.");
+        message.reply("Bien le Bonjour ${user}, j'espère que vous avez pu reprendre votre souffle par cette courte brève de la Tempète.");
         console.log ("Commande Salut effectué");
     }
 });
