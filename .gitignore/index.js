@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("!")
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: !help");
+    bot.user.setGame("Fortnite");
     console.log("Connected");
 });
 
@@ -24,12 +24,9 @@ bot.on('message', message => {
 
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "ray_exe").send(`Bienvenue ${member}`);
+    member.guild.channels.find("name", "ray_exe").send(`Bienvenue ${member}, Commandant, vite un Survivant à rejoind le Refuge !`);
 });
 
-//bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "ray_exe").send(`${member} vien de quitter`)
-});
 
 bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'Membres');
