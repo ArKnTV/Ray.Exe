@@ -27,7 +27,7 @@ bot.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "ray_exe").send(`Bienvenue ${member}`);
 });
 
-///bot.on("guildMemberRemove", member => {
+//bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "ray_exe").send(`${member} vien de quitter`)
 });
 
