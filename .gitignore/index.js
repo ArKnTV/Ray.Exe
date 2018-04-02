@@ -32,3 +32,12 @@ bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'Membres');
     member.addRole(role)
 });
+
+
+client.on('message', message => {
+    // If the message is "what is my avatar"
+    if (message.content === 'what is my avatar') {
+      // Send the user's avatar URL
+      message.reply(message.author.avatarURL);
+    }
+  });
