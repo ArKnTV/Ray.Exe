@@ -128,6 +128,8 @@ bot.on('message', msg => {
         msg.delete()
         msg.channel.send(msg.content.substr(4))
     }
+
+    if(msg.author.id!=='289133829229117444')return;
 });
 
 bot.login(process.env.TOKEN);
